@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mp3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zing-mp3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VkQ-hN-15U" userLabel="logo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="UfK-du-7qA"/>
+                                    <constraint firstAttribute="width" constant="375" id="qPF-Av-q8Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zing MP3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpN-lO-Eeq" userLabel="Text">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Văn Quý" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GES-li-avA">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hpN-lO-Eeq" secondAttribute="bottom" constant="8" id="FDn-Wa-dxM"/>
+                            <constraint firstItem="hpN-lO-Eeq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IEC-vz-qa2"/>
+                            <constraint firstItem="VkQ-hN-15U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bVN-f2-P7l"/>
+                            <constraint firstItem="GES-li-avA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sgq-un-Yc9"/>
+                            <constraint firstItem="VkQ-hN-15U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x1z-0E-wqL"/>
+                            <constraint firstItem="GES-li-avA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="zlY-SK-sEL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logo" destination="VkQ-hN-15U" id="Lvt-Si-GaH"/>
+                        <outlet property="ten" destination="GES-li-avA" id="As6-Vs-MCh"/>
+                        <outlet property="text" destination="hpN-lO-Eeq" id="CBL-eu-r9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zing-mp3.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
